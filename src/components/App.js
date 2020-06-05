@@ -26,7 +26,7 @@ function App() {
         <ThemeProvider theme={theme}>
           <CssBaseline />
           <NavigationBar
-            variant
+            variant="vertical"
             content={
               <Switch>
                 <Route exact path="/" component={HomePage} />
