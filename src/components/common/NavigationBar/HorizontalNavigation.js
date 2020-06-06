@@ -76,7 +76,7 @@ const useStyles = makeStyles((theme) => ({
     },
   },
   homeLink: {
-    marginRight: theme.spacing(3),
+    padding: `0 ${theme.spacing(2)}px`,
   },
   toolbar: {
     ...theme.mixins.toolbar,
