@@ -5,7 +5,7 @@ import {menuItems} from "./menuItems";
 const environments = {
   TEST: {
     name: "test",
-    title: "Framework Test",
+    title: "Framework Dev",
     // apiKey: API_KEY,
     apiRoot: "https://api.spoonacular.com/",
     menuItems: menuItems,
@@ -13,7 +13,7 @@ const environments = {
   },
   PROD: {
     name: "production",
-    title: "Framework Production",
+    title: "Framework Prod",
     // apiKey: API_KEY,
     apiRoot: "https://api.spoonacular.com/",
     menuItems: menuItems,

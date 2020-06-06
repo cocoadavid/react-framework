@@ -88,7 +88,7 @@ const useStyles = makeStyles((theme) => ({
     position: "relative",
     display: "inline-flex",
     width: "auto",
-    color: "#fff",
+    color: theme.palette.primary.contrastText,
     minHeight: minHeight,
     paddingLeft: theme.spacing(2),
     paddingRight: theme.spacing(2),
