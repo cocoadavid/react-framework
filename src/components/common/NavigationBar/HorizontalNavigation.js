@@ -51,25 +51,14 @@ const useStyles = makeStyles((theme) => ({
     padding: theme.spacing(3),
   },
   menuButton: {
-    marginRight: theme.spacing(2),
     [theme.breakpoints.up("lg")]: {
       display: "none",
-    },
-  },
-  drawer: {
-    [theme.breakpoints.down("md")]: {
-      width: drawerWidth,
-      flexShrink: 0,
-    },
-    [theme.breakpoints.up("lg")]: {
-      flexGrow: 1,
     },
   },
   drawerPaper: {
     width: drawerWidth,
   },
-  title: {
-    marginRight: theme.spacing(2),
+  mobileTitle: {
     flexGrow: 1,
     [theme.breakpoints.up("lg")]: {
       display: "none",
@@ -126,15 +115,16 @@ const useStyles = makeStyles((theme) => ({
   collapse: {
     display: "inline-flex",
     position: "absolute",
-    // top: 0,
     left: 0,
-    // width: "100%",
     marginTop: minHeight + 1,
   },
   collapseMenu: {
     backgroundColor: theme.palette.primary.light,
     width: "100%",
   },
+  nav: {
+    flexGrow: 1
+  }
 }));
 
 const HorizontalNavigation = ({ content, withIcon, ...props }) => {
@@ -204,13 +194,13 @@ const HorizontalNavigation = ({ content, withIcon, ...props }) => {
           </IconButton>
           <Typography
             variant="h6"
-            className={classes.title}
+            className={classes.mobileTitle}
             component="h1"
             noWrap
           >
             {env.title}
           </Typography>
-          <nav className={classes.drawer}>
+          <nav className={classes.nav}>
             {/* --- DESKTOP NAV --- */}
             <Hidden mdDown implementation="css">
               <List className={classes.list} dense disablePadding>
