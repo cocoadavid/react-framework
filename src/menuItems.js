@@ -1,4 +1,4 @@
-import TestPage from "./routes/TestPage";
+import TestPage from "./components/testPage/TestPage";
 // you can find available icons names here: https://material-ui.com/components/material-icons/ and https://material.io/resources/icons/?style=baseline
 // icon names must be lowercase and used with underscore
 
@@ -7,7 +7,6 @@ export const menuItems = [
     {
         label: "test",
         url: "/test",
-        component: TestPage,
         icon: "timeline"
     },
 ];
